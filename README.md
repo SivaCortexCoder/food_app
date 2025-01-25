@@ -48,6 +48,7 @@ This repository contains the code for a **Canteen Food Ordering Website**. It fe
       👉 **npm install express mongoose jswebToken bcrypt Cors dotenv body-parser multer stripe validator nodemon**
 
 3. **Set Up Environment Variables:**
+   
       In the server 👉 **(Backend)**👈 directory,
       create a 👉**.env**👈 file and include the following environment variables:
       
@@ -55,6 +56,7 @@ This repository contains the code for a **Canteen Food Ordering Website**. It fe
       👉 STRIPE_SECRET_KEY= "YOUR KEY"
    
 4. **Replace <your-mongodb-connection-string> with your MongoDB Atlas connection string.**
+   
       Path -  backend➡️config➡️db.js➡️mongodb+srv://YOUR USERNAME:PASSWORD @cluster2.kf0es.mongodb.net/PROJECT-NAME
 
 5. **Running the Application**
