@@ -32,41 +32,41 @@ This repository contains the code for a **Canteen Food Ordering Website**. It fe
    
 2. **Install Dependencies: Navigate to the project folders and install dependencies for the frontend and backend:**
 
-**Frontend:**
-
-👉 **cd frontend** 
-👉 **npm install**
-👉 **npm install react-router-dom**
-
-**Backend:**
-
-👉 **cd Backend**
-👉 **npm init**
-
-**Intall the dependencies for Backend:**
-
-👉 **npm install express mongoose jswebToken bcrypt Cors dotenv body-parser multer stripe validator nodemon**
+      **Frontend:**
+      
+      👉 **cd frontend** 
+      👉 **npm install**
+      👉 **npm install react-router-dom**
+      
+      **Backend:**
+      
+      👉 **cd Backend**
+      👉 **npm init**
+      
+      **Intall the dependencies for Backend:**
+      
+      👉 **npm install express mongoose jswebToken bcrypt Cors dotenv body-parser multer stripe validator nodemon**
 
 3. **Set Up Environment Variables:**
-   In the server 👉 **(Backend)**👈 directory,
-   create a 👉**.env**👈 file and include the following environment variables:
-   
-   👉 JWT_SECRET = "YOUR SECRET KEY"
-   👉 STRIPE_SECRET_KEY= "YOUR KEY"
+      In the server 👉 **(Backend)**👈 directory,
+      create a 👉**.env**👈 file and include the following environment variables:
+      
+      👉 JWT_SECRET = "YOUR SECRET KEY"
+      👉 STRIPE_SECRET_KEY= "YOUR KEY"
    
 5. **Replace <your-mongodb-connection-string> with your MongoDB Atlas connection string.**
-   Path -  backend➡️config➡️db.js➡️mongodb+srv://YOUR USERNAME:PASSWORD @cluster2.kf0es.mongodb.net/PROJECT-NAME
+      Path -  backend➡️config➡️db.js➡️mongodb+srv://YOUR USERNAME:PASSWORD @cluster2.kf0es.mongodb.net/PROJECT-NAME
 
 6. **Running the Application**
 
-  Start the **Admin Panel**: Navigate to the admin folder and run:
-  👉 **npm run dev**
-
-  Start the **Backend**: Navigate to the Backend folder and run:
-  👉 **npm run server**
-
-  Start the **Frontend**: Navigate to the Frontend folder and run:
-  👉 **npm run dev**
+     Start the **Admin Panel**: Navigate to the admin folder and run:
+     👉 **npm run dev**
+   
+     Start the **Backend**: Navigate to the Backend folder and run:
+     👉 **npm run server**
+   
+     Start the **Frontend**: Navigate to the Frontend folder and run:
+     👉 **npm run dev**
 
 **License**
 This project is licensed under the MIT License.
