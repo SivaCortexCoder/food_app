@@ -1,76 +1,159 @@
-## Live Site
-[User Side](https://food-app-frontend-vjgo.onrender.com/)
+# **Canteen Food Ordering Website**
 
+This repository contains the code for a **Canteen Food Ordering Website**. It features a **User Portal** for ordering food and an **Admin Portal** for managing food items and orders.
 
-[Admin Side](https://food-app-admin-nwig.onrender.com/)
+---
 
+## **Live Site**
 
+- **[User Side](https://food-app-frontend-vjgo.onrender.com/)**  
+- **[Admin Side](https://food-app-admin-nwig.onrender.com/)**  
 
-# Canteen Food Ordering Website
+---
 
-This repository contains the code for a **Canteen Food Ordering Website**. It features a user portal for ordering food and an admin portal for managing food items and orders.
+## **Features**
 
-## Features
-- **User Portal**: Browse menu, add items to the cart, and place orders.
-- **Admin Portal**: Manage food items, mark items as out of stock, and view user orders.
-- **Backend**: Node.js and Express for API development.
-- **Frontend**: ReactJS for a modern user interface.
-- **Database**: MongoDB Atlas for storing user and admin data.
+### **User Portal**
+- Browse the food menu.
+- Add items to the cart and place orders.
+- Track order status.
 
-## Getting Started
+### **Admin Portal**
+- Add, update, and manage food items.
+- Mark food items as out of stock.
+- View and update user orders (e.g., food processing, delivered).
 
-### Prerequisites
-- **Node.js** and **npm** installed on your system.
-- MongoDB Atlas account (for setting up the database).
+### **Tech Stack**
+- **Frontend**: ReactJS
+- **Backend**: Node.js and Express.js
+- **Database**: MongoDB Atlas
+- **Authentication**: JWT
+- **Payment Gateway**: Stripe
 
-### Installation
+---
 
-1. **Clone the Repository**:
+## **Getting Started**
+
+Follow these steps to set up and run the project locally.
+
+---
+
+### **Prerequisites**
+Ensure the following are installed on your system:
+- **[Node.js](https://nodejs.org/)** and **npm**
+- **MongoDB Atlas** account (to manage the database)
+
+---
+
+### **Installation**
+
+1. **Clone the Repository**:  
+   Clone this repository to your local system:  
    ```bash
    git clone <repository-url>
-   
-2. **Install Dependencies: Navigate to the project folders and install dependencies for the frontend and backend:**
+Replace <repository-url> with your repository link.
 
-Frontend:👇
+Install Dependencies:
+Navigate to the project folders and install dependencies.
 
-👉 **cd frontend** 
-👉 **npm install**
-👉 **npm install react-router-dom**
+Frontend:
+bash
+Copy
+Edit
+cd frontend
+npm install
+npm install react-router-dom
+Backend:
+bash
+Copy
+Edit
+cd backend
+npm init
+Install the required backend dependencies:
 
-Backend:👇
+bash
+Copy
+Edit
+npm install express mongoose jsonwebtoken bcrypt cors dotenv body-parser multer stripe validator nodemon
+Set Up Environment Variables:
+In the backend directory, create a .env file and include the following environment variables:
 
-👉 **cd Backend**
-👉 **npm init**
+env
+Copy
+Edit
+JWT_SECRET="YOUR SECRET KEY"
+STRIPE_SECRET_KEY="YOUR STRIPE KEY"
+Update the MongoDB connection string in:
+backend/config/db.js
+Example:
 
-Intall the dependencies for Backend:👇
+javascript
+Copy
+Edit
+mongodb+srv://<YOUR USERNAME>:<PASSWORD>@cluster2.kf0es.mongodb.net/<PROJECT-NAME>
+Running the Application
+Start the Admin Panel:
+Navigate to the admin folder and run:
 
-👉 **npm install express mongoose jswebToken bcrypt Cors dotenv body-parser multer stripe validator nodemon**
+bash
+Copy
+Edit
+npm run dev
+Start the Backend:
+Navigate to the backend folder and run:
 
-3. Set Up Environment Variables:
-   In the server 👉 **(Backend)**👈 directory, create a 👉**.env**👈 file and include the following environment variables:
-   
-   👉 JWT_SECRET = "YOUR SECRET KEY""
-   👉 STRIPE_SECRET_KEY= "YOUR KEY"
-   
-5. Replace <your-mongodb-connection-string> with your MongoDB Atlas connection string.
-   Path -  backend➡️config➡️db.js➡️mongodb+srv://YOUR USERNAME:PASSWORD @cluster2.kf0es.mongodb.net/PROJECT-NAME
+bash
+Copy
+Edit
+npm run server
+Start the Frontend:
+Navigate to the frontend folder and run:
 
-5.Running the Application
+bash
+Copy
+Edit
+npm run dev
+Access the Application:
+Open your browser and navigate to:
 
-  Start the **Admin Panel**: Navigate to the admin folder and run:
-  👉 **npm run dev**
+arduino
+Copy
+Edit
+http://localhost:4000
+Project Structure
+plaintext
+Copy
+Edit
+project-root/
+│
+├── frontend/              # Frontend code (ReactJS)
+├── backend/               # Backend code (Node.js + Express)
+├── admin/                 # Admin Panel
+├── .env                   # Backend environment variables
+├── package.json           # Dependency management
+├── config/db.js           # Database configuration
+└── README.md              # Project documentation
+Live Demo
+You can view the live version of this project here:
 
-  Start the **Backend**: Navigate to the Backend folder and run:
-  👉 **npm run server**
-
-  Start the **Frontend**: Navigate to the Frontend folder and run:
-  👉 **npm run dev**
-
-**License**
+User Side
+Admin Side
+License
 This project is licensed under the MIT License.
 Feel free to fork, modify, and use this project as per your requirements!
 
-**Acknowledgments**
-Special thanks to all the open-source libraries and tools that made this project possible.
+Acknowledgments
+Special thanks to all the open-source libraries, frameworks, and tools that made this project possible.
 
-  
+markdown
+Copy
+Edit
+
+### **Key Changes Made**:
+1. Added bold text (`**`) for headings, subheadings, and important details.
+2. Properly aligned and organized sections with clear spacing.
+3. Used code blocks (`bash`, `env`, `javascript`) where appropriate for better readability.
+4. Included relevant links (e.g., live site links) prominently.
+5. Structured the **Project Structure** and installation steps neatly.
+
+Let me know if you need further tweaks or adjustments!
