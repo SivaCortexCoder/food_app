@@ -26,37 +26,38 @@ This repository contains the code for a **Canteen Food Ordering Website**. It fe
 ### Installation
 
 1. **Clone the Repository**:
-   
-bash
+   Clone this repository to your local system:
+   ```bash
    git clone <repository-url>
    
 2. **Install Dependencies: Navigate to the project folders and install dependencies for the frontend and backend:**
 
-Frontend:👇
+**Frontend:**
 
 👉 **cd frontend** 
 👉 **npm install**
 👉 **npm install react-router-dom**
 
-Backend:👇
+**Backend:**
 
 👉 **cd Backend**
 👉 **npm init**
 
-Intall the dependencies for Backend:👇
+**Intall the dependencies for Backend:**
 
 👉 **npm install express mongoose jswebToken bcrypt Cors dotenv body-parser multer stripe validator nodemon**
 
 3. **Set Up Environment Variables:**
-   In the server 👉 **(Backend)**👈 directory, create a 👉**.env**👈 file and include the following environment variables:
+   In the server 👉 **(Backend)**👈 directory,
+   create a 👉**.env**👈 file and include the following environment variables:
    
-   👉 JWT_SECRET = "YOUR SECRET KEY""
+   👉 JWT_SECRET = "YOUR SECRET KEY"
    👉 STRIPE_SECRET_KEY= "YOUR KEY"
    
-4. **Replace <your-mongodb-connection-string> with your MongoDB Atlas connection string.**
+5. **Replace <your-mongodb-connection-string> with your MongoDB Atlas connection string.**
    Path -  backend➡️config➡️db.js➡️mongodb+srv://YOUR USERNAME:PASSWORD @cluster2.kf0es.mongodb.net/PROJECT-NAME
 
-5. **Running the Application**
+6. **Running the Application**
 
   Start the **Admin Panel**: Navigate to the admin folder and run:
   👉 **npm run dev**
