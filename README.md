@@ -54,10 +54,10 @@ This repository contains the code for a **Canteen Food Ordering Website**. It fe
       👉 JWT_SECRET = "YOUR SECRET KEY"
       👉 STRIPE_SECRET_KEY= "YOUR KEY"
    
-5. **Replace <your-mongodb-connection-string> with your MongoDB Atlas connection string.**
+4. **Replace <your-mongodb-connection-string> with your MongoDB Atlas connection string.**
       Path -  backend➡️config➡️db.js➡️mongodb+srv://YOUR USERNAME:PASSWORD @cluster2.kf0es.mongodb.net/PROJECT-NAME
 
-6. **Running the Application**
+5. **Running the Application**
 
      Start the **Admin Panel**: Navigate to the admin folder and run:
      👉 **npm run dev**
